@@ -1,5 +1,5 @@
 {
-  "name": "@angulartools/buttons",
+  "name": "@angulartoolsdr/buttons",
   "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^18.2.0",
