@@ -5,7 +5,6 @@ import { MatButton } from '@angular/material/button';
 @Component({
     selector: 'lib-save-button',
     templateUrl: './save-button.component.html',
-    standalone: true,
     imports: [MatButton, TranslateModule]
 })
 export class SaveButtonComponent {

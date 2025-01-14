@@ -5,7 +5,6 @@ import { MatButton } from '@angular/material/button';
 @Component({
     selector: 'lib-cancel-button',
     templateUrl: './cancel-button.component.html',
-    standalone: true,
     imports: [MatButton, TranslateModule]
 })
 export class CancelButtonComponent {
