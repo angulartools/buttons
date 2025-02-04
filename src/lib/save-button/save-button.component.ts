@@ -1,11 +1,11 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { TranslationPipe } from '@angulartoolsdr/translation';
 import { MatButton } from '@angular/material/button';
 
 @Component({
     selector: 'lib-save-button',
     templateUrl: './save-button.component.html',
-    imports: [MatButton, TranslateModule]
+    imports: [MatButton, TranslationPipe]
 })
 export class SaveButtonComponent {
 

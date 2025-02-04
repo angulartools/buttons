@@ -1,11 +1,11 @@
 import { Component, Output, EventEmitter, Input } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslationPipe } from '@angulartoolsdr/translation';
 import { MatButton } from '@angular/material/button';
 
 @Component({
     selector: 'lib-cancel-button',
     templateUrl: './cancel-button.component.html',
-    imports: [MatButton, TranslateModule]
+    imports: [MatButton, TranslationPipe]
 })
 export class CancelButtonComponent {
 
