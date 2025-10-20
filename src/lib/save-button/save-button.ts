@@ -4,10 +4,10 @@ import { MatButton } from '@angular/material/button';
 
 @Component({
     selector: 'lib-save-button',
-    templateUrl: './save-button.component.html',
+    templateUrl: './save-button.html',
     imports: [MatButton, TranslationPipe]
 })
-export class SaveButtonComponent {
+export class SaveButton {
 
   @Input() label = 'SALVAR';
   @Input() icone = 'fa-regular fa-check';
