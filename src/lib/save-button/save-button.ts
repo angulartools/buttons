@@ -1,23 +1,22 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { TranslationPipe } from '@angulartoolsdr/translation';
 import { MatButton } from '@angular/material/button';
 
 @Component({
-    selector: 'lib-save-button',
-    templateUrl: './save-button.html',
-    imports: [MatButton, TranslationPipe]
+  selector: 'lib-save-button',
+  templateUrl: './save-button.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [MatButton, TranslationPipe]
 })
 export class SaveButton {
 
-  @Input() label = 'SALVAR';
-  @Input() icone = 'fa-regular fa-check';
-  @Input() disabled = false;
+  label = input<string>('SALVAR');
+  icone = input<string>('fa-regular fa-check');
+  disabled = input<boolean>(false);
 
-  @Output() onClickSave: EventEmitter<any> = new EventEmitter<any>();
+  onClickSave = output<Event>();
 
-  constructor() { }
-
-  clickButton(event) {
+  clickButton(event: Event) {
     this.onClickSave.emit(event);
   }
 

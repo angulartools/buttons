@@ -1,3 +1,11 @@
-<button mat-stroked-button color="accent" type="button" [disabled]="disabled" (click)="cancelar()">
-  <i class="fa-regular fa-xmark mr-1"></i> {{'CANCELAR' | translate}}
+<button
+  mat-stroked-button
+  color="accent"
+  type="button"
+  [disabled]="disabled()"
+  (click)="cancelar()">
+  
+  <i class="fa-regular fa-xmark mr-1"></i>
+  {{ 'CANCELAR' | translate }}
+
 </button>
